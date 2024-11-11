@@ -9,8 +9,6 @@ class Product:
     def __str__(self):
         return f"Product({self.name},{self.weight},{self.category})"
 
-
-
 class Shop:
     def __init__(self):
         self.__file_name = 'products.txt'
@@ -23,7 +21,7 @@ class Shop:
             return "Файл с продуктами отсутствует."
 
     def add(self, *products):
-        # Считываем существующие продукты
+
         existing_products = set()
         try:
             with open(self.__file_name, 'r', encoding='utf-8') as file:
@@ -32,7 +30,7 @@ class Shop:
         except FileNotFoundError:
             pass
 
-        # Открываем файл для добавления
+
         with open(self.__file_name, 'a', encoding='utf-8') as file:
             for product in products:
                 product_str = str(product)
