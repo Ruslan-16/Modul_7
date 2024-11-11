@@ -1,0 +1,3 @@
+Product(Potato,50.5,Vegetables)
+Product(Spaghetti,3.4,Groceries)
+Product(Potato,5.5,Vegetables)
